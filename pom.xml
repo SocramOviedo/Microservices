@@ -49,7 +49,7 @@
 			
 		</plugins>
 
-		<filename>springboot-microservices</filename>
+		<finalName>springboot-microservices</finalName>
 		
 	</build>
 

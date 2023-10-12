@@ -48,6 +48,9 @@
 		<plugins>
 			
 		</plugins>
+
+		<filename>springboot-microservices</filename>
+		
 	</build>
 
 </project>

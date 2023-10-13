@@ -25,17 +25,20 @@ public class Movimientos {
     private Double valor;
     @Column
     private Double saldo;
+    @Column
+    private String estado;
 
     // Constructor vacío (necesario para JPA)
     public Movimientos() {
     }
 
     // Constructor con parámetros
-    public Movimientos(Date fecha, String tipoMovimiento, Double valor, Double saldo) {
+    public Movimientos(Date fecha, String tipoMovimiento, Double valor, Double saldo, String estado) {
         this.fecha = fecha;
         this.tipoMovimiento = tipoMovimiento;
         this.valor = valor;
         this.saldo = saldo;
+        this.estado = estado;
     }
 
     // Getters y setters
@@ -86,5 +89,13 @@ public class Movimientos {
 
     public void setCuenta(Cuenta cuenta) {
         this.cuenta = cuenta;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

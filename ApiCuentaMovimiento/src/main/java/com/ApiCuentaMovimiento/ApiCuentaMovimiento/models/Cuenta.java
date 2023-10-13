@@ -42,6 +42,7 @@ public class Cuenta {
         this.tipoCuenta = tipoCuenta;
         this.saldo = saldo;
         this.estado = estado;
+        this.cliente = cliente;
     }
 
     // Getters y setters

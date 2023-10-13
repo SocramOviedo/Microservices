@@ -8,16 +8,12 @@ import java.util.Optional;
 
 @Repository
 public interface CuentaRepository extends JpaRepository<Cuenta, Long> {
-    // Métodos de consulta personalizados
 
     // Buscar cuentas por tipo de cuenta
     List<Cuenta> findByTipoCuenta(String tipoCuenta);
 
+    // Buscar cuentas por estado
     List<Cuenta> findByEstado(String estado);
-
-    // List<Cuenta> findByFecha(String fecha);
-
-    // List<Cuenta> findById(String id);
 
     // Buscar cuentas por cliente
     Optional<Cuenta> findById(Cuenta cuenta);

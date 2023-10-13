@@ -20,6 +20,4 @@ public class ClientePersonaService {
 
         rabbitTemplate.convertAndSend("mi-exchange", "mi-routing-key", mensaje);
     }
-
-    // Otros métodos
 }

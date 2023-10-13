@@ -7,7 +7,6 @@ import java.util.List;
 
 @Repository
 public interface MovimientosRepository extends JpaRepository<Movimientos, Long> {
-    // Métodos de consulta personalizados
 
     // Buscar movimientos por tipo de movimiento
     List<Movimientos> findByTipoMovimiento(String tipoMovimiento);

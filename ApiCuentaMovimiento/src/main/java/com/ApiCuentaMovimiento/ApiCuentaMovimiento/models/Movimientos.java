@@ -19,13 +19,10 @@ public class Movimientos {
 
     @Column
     private Date fecha;
-
     @Column
     private String tipoMovimiento;
-
     @Column
     private Double valor;
-
     @Column
     private Double saldo;
 
@@ -90,5 +87,4 @@ public class Movimientos {
     public void setCuenta(Cuenta cuenta) {
         this.cuenta = cuenta;
     }
-
 }

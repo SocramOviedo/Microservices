@@ -16,19 +16,22 @@ public class Persona {
     private String identificacion;
     private String direccion;
     private String telefono;
+    private String estado;
 
     // Constructor vacío (necesario para JPA)
     public Persona() {
     }
 
     // Constructor con parámetros
-    public Persona(String nombre, String genero, int edad, String identificacion, String direccion, String telefono) {
+    public Persona(String nombre, String genero, int edad, String identificacion, String direccion, String telefono,
+            String estado) {
         this.nombre = nombre;
         this.genero = genero;
         this.edad = edad;
         this.identificacion = identificacion;
         this.direccion = direccion;
         this.telefono = telefono;
+        this.estado = estado;
     }
 
     // Getters y setters
@@ -87,5 +90,13 @@ public class Persona {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

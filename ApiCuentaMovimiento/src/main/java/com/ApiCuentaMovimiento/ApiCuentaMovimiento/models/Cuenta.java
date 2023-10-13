@@ -106,7 +106,6 @@ public class Cuenta {
         } else if ("EGRESO".equals(movimiento.getTipoMovimiento())) {
             saldo -= movimiento.getValor();
         }
-
         // Agregar el movimiento a la lista de movimientos
         movimientos.add(movimiento);
         movimiento.setCuenta(this);

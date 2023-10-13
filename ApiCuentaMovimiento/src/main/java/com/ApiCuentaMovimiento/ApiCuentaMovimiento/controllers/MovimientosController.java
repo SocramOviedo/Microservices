@@ -92,6 +92,5 @@ public class MovimientosController {
         movimientosService.registrarMovimiento(cuenta, movimiento);
         // Mensaje
         return ResponseEntity.ok("Movimiento registrado con éxito");
-
     }
 }
